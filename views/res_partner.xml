@@ -13,6 +13,8 @@
                       <field name="business_id"
                              placeholder="e.g. 1234567-8"
                              attrs="{'invisible':[('is_company', '=', False)]}"/>
+                      <field name="vat"
+                             attrs="{'invisible':[('is_company', '=', False)]}"/>
                       <field name="edi_code"
                              placeholder="e.g. 003712345678"
                              attrs="{'invisible': [('type', '!=', 'invoice'), ('is_company', '=', False)]}"/>
