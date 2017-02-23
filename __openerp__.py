@@ -13,7 +13,7 @@
 {
     "name": "Finland - Accounting (Raportointikoodisto)",
     "category": "Localization",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": """
     Finnish chart of accounts, value added taxes and useful new fields.
 
@@ -27,6 +27,7 @@
     "author": "RockIt Oy & Avoin.Systems",
     "depends": [
         "account",
+        "l10n_multilang",
     ],
     "data": [
         "data/account_chart_template_pre.xml",  # 1st
