@@ -111,6 +111,7 @@ class AccountInvoiceFinnish(models.Model):
 
     payment_reference_type = fields.Selection(
         related='company_id.payment_reference_type',
+        readonly=True,
     )
 
     @api.multi
