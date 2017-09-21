@@ -101,7 +101,7 @@ class AccountInvoiceFinnish(models.Model):
                         "Payment reference type {} doesn't have"
                         "a compute method".format(ref_type))
 
-                self.payment_reference = \
+                invoice.payment_reference = \
                     getattr(invoice, method_name)(invoice.number)
 
     payment_reference = fields.Char(
