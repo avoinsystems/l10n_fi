@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 10.0-20170126\n"
+"Project-Id-Version: Odoo Server 11.0-20171019\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-01-26 09:51+0000\n"
-"PO-Revision-Date: 2017-01-26 09:51+0000\n"
+"POT-Creation-Date: 2017-10-19 14:45+0000\n"
+"PO-Revision-Date: 2017-10-19 14:45+0000\n"
 "Last-Translator: <>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -290,6 +290,7 @@ msgstr ""
 
 #. module: l10n_fi
 #: model:ir.model.fields,help:l10n_fi.field_res_partner_edi_code
+#: model:ir.model.fields,help:l10n_fi.field_res_users_edi_code
 msgid "An EDI identifier of the partner, used to exchange electronic data, eg. invoices."
 msgstr ""
 
@@ -395,6 +396,7 @@ msgstr ""
 
 #. module: l10n_fi
 #: model:ir.model.fields,field_description:l10n_fi.field_res_partner_business_id
+#: model:ir.model.fields,field_description:l10n_fi.field_res_users_business_id
 msgid "Business ID"
 msgstr ""
 
@@ -417,6 +419,11 @@ msgid "Business ID {} is invalid"
 msgstr ""
 
 #. module: l10n_fi
+#: model:ir.ui.view,arch_db:l10n_fi.view_account_config_settings_finnish
+msgid "Choose the type of payment reference used on customer invoices"
+msgstr ""
+
+#. module: l10n_fi
 #: model:ir.model,name:l10n_fi.model_res_company
 msgid "Companies"
 msgstr ""
@@ -427,13 +434,24 @@ msgid "Company"
 msgstr ""
 
 #. module: l10n_fi
+#: model:ir.model,name:l10n_fi.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: l10n_fi
 #: selection:res.company,payment_reference_type:0
 msgid "Creditor Reference (RF)"
 msgstr ""
 
 #. module: l10n_fi
 #: model:ir.model.fields,field_description:l10n_fi.field_res_partner_edi_code
+#: model:ir.model.fields,field_description:l10n_fi.field_res_users_edi_code
 msgid "EDI Code"
+msgstr ""
+
+#. module: l10n_fi
+#: model:res.country.group,name:l10n_fi.eu_wo_finland
+msgid "EU w/o Finland"
 msgstr ""
 
 #. module: l10n_fi
@@ -536,6 +554,7 @@ msgstr ""
 
 #. module: l10n_fi
 #: model:ir.model.fields,help:l10n_fi.field_res_partner_business_id
+#: model:ir.model.fields,help:l10n_fi.field_res_users_business_id
 msgid "Finnish Business ID as defined in https://www.ytj.fi/en/index/businessid.html"
 msgstr ""
 
@@ -2240,11 +2259,6 @@ msgid "Pankkisaamiset (Finanssitalo U)"
 msgstr ""
 
 #. module: l10n_fi
-#: model:ir.model,name:l10n_fi.model_res_partner
-msgid "Partner"
-msgstr ""
-
-#. module: l10n_fi
 #: model:account.account,name:l10n_fi.1_a70803
 #: model:account.account.template,name:l10n_fi.a70803
 msgid "Patentit ja lisenssit, kehittämiskulut"
@@ -2257,14 +2271,19 @@ msgid "Patentit ja lisenssit, tutkimuskulut"
 msgstr ""
 
 #. module: l10n_fi
+#: model:ir.ui.view,arch_db:l10n_fi.view_account_config_settings_finnish
+msgid "Payment Reference"
+msgstr ""
+
+#. module: l10n_fi
 #: model:ir.model.fields,field_description:l10n_fi.field_account_invoice_payment_reference
 msgid "Payment Reference Number"
 msgstr ""
 
 #. module: l10n_fi
-#: model:ir.model.fields,field_description:l10n_fi.field_account_config_settings_payment_reference_type
 #: model:ir.model.fields,field_description:l10n_fi.field_account_invoice_payment_reference_type
 #: model:ir.model.fields,field_description:l10n_fi.field_res_company_payment_reference_type
+#: model:ir.model.fields,field_description:l10n_fi.field_res_config_settings_payment_reference_type
 msgid "Payment Reference Type"
 msgstr ""
 
@@ -3286,9 +3305,9 @@ msgid "Televiestintä- ,audio- ,video, muut ICT"
 msgstr ""
 
 #. module: l10n_fi
-#: model:ir.model.fields,help:l10n_fi.field_account_config_settings_payment_reference_type
 #: model:ir.model.fields,help:l10n_fi.field_account_invoice_payment_reference_type
 #: model:ir.model.fields,help:l10n_fi.field_res_company_payment_reference_type
+#: model:ir.model.fields,help:l10n_fi.field_res_config_settings_payment_reference_type
 msgid "The default payment reference for sales invoices"
 msgstr ""
 
@@ -4112,11 +4131,6 @@ msgid "Ympäristövaraus"
 msgstr ""
 
 #. module: l10n_fi
-#: model:ir.model,name:l10n_fi.model_account_config_settings
-msgid "account.config.settings"
-msgstr ""
-
-#. module: l10n_fi
 #: model:ir.ui.view,arch_db:l10n_fi.res_partner_finnish
 msgid "e.g. 003712345678"
 msgstr ""
@@ -4124,5 +4138,10 @@ msgstr ""
 #. module: l10n_fi
 #: model:ir.ui.view,arch_db:l10n_fi.res_partner_finnish
 msgid "e.g. 1234567-8"
+msgstr ""
+
+#. module: l10n_fi
+#: model:ir.model,name:l10n_fi.model_res_config_settings
+msgid "res.config.settings"
 msgstr ""
 

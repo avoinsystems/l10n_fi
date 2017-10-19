@@ -111,7 +111,6 @@ class AccountInvoiceFinnish(models.Model):
 
     payment_reference_type = fields.Selection(
         related='company_id.payment_reference_type',
-        readonly=True,
     )
 
     @api.multi
@@ -121,10 +120,4 @@ class AccountInvoiceFinnish(models.Model):
         self.filtered(lambda i: i.payment_reference_type != 'none' and
                       i.type == 'out_invoice') \
             ._compute_payment_reference()
-
-        # Make sure even refund invoices have a payment reference.
-        # Otherwise the finvoice validation will fail.
-        self.filtered(lambda i: not i.payment_reference and 'refund' in i.type)\
-            .write({'payment_reference': '000'})
-
         return res

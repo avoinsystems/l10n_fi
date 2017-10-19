@@ -6,7 +6,7 @@ from odoo import api, fields, models
 
 
 class FinnishAccountSettings(models.TransientModel):
-    _inherit = 'account.config.settings'
+    _inherit = 'res.config.settings'
 
     payment_reference_type = fields.Selection(
         related='company_id.payment_reference_type',
