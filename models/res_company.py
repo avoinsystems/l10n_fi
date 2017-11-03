@@ -15,7 +15,7 @@ class FinnishCompany(models.Model):
             ('rf', 'Creditor Reference (RF)'),
         ],
         'Payment Reference Type',
-        default='none',
+        default='rf',
         help='The default payment reference for sales invoices',
         required=True,
     )
