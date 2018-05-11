@@ -13,7 +13,7 @@ def check_business_id(business_id):
     Specification (in Finnish only):
     https://www.vero.fi/download/Tarkistusmerkin_laskenta/%7BD5780347-547E-4C44-90C1-25F8AD9DA7F8%7D/6508
     """
-    if not isinstance(business_id, basestring):
+    if not isinstance(business_id, str):
         raise ValidationError(_('Wrong data type passed on as Business ID {}')
                               .format(business_id))
 
