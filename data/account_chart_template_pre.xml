@@ -4,7 +4,7 @@
 
         <record model="account.account.template" id="a19190">
             <field name="code">19190</field>
-            <field name="user_type_id" ref="account.data_account_type_receivable"/>
+            <field name="user_type_id" ref="account.data_account_type_current_assets"/>
             <field name="reconcile" eval="True"/>
             <field name="name">Rahansiirrot/ v&#228;litilit/ t&#228;sm&#228;ytykset</field>
         </record>
