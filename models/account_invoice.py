@@ -119,6 +119,6 @@ class AccountInvoiceFinnish(models.Model):
         res = super(AccountInvoiceFinnish, self).invoice_validate()
         # noinspection PyProtectedMember
         self.filtered(lambda i: i.payment_reference_type != 'none' and
-                      i.type == 'out_invoice') \
+                      i.type in ('out_invoice', 'out_refund')) \
             ._compute_payment_reference()
         return res
