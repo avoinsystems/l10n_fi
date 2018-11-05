@@ -1,4 +1,3 @@
-# coding=utf-8
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 # Copyright (C) RockIT Oy 2014-
@@ -13,7 +12,7 @@
 {
     "name": "Finland - Accounting (Raportointikoodisto)",
     "category": "Localization",
-    "version": "1.1.0",
+    "version": "12.0.1.0.0",
     "description": """
     Finnish chart of accounts, value added taxes and useful new fields.
 
@@ -30,16 +29,13 @@
         "l10n_multilang",
     ],
     "data": [
-        "data/account_chart_template_pre.xml",  # 1st
-        "data/accounts.xml",
-        "data/tax_tags.xml",
-        "data/taxes.xml",
-        "data/fiscal_positions.xml",
-        "data/account_chart_template_post.xml",  # 2nd last
-        "data/account_chart_template.yml",  # Load / evaluate this last
-        "views/account_invoice.xml",
-        "views/res_config.xml",
-        "views/res_partner.xml",
+        "data/l10n_fi_chart_data.xml",  # 1st
+        "data/account_account_template_data.xml",
+        "data/account_account_tag_data.xml",
+        "data/account_tax_template_data.xml",
+        "data/account_fiscal_position_template_data.xml",
+        "data/account_chart_template_data.xml",  # 2nd last
+        "data/account_chart_template_configure_data.xml",  # Load / evaluate this last
     ],
     "installable": True,
 }
