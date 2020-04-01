@@ -128,3 +128,13 @@ class AccountInvoiceFinnish(models.Model):
             .write({'payment_reference': '000'})
 
         return res
+
+    @api.multi
+    def _get_printed_report_name(self):
+        if self.partner_id.commercial_company_name:
+            return '{} - {}'.format(
+                super(AccountInvoiceFinnish, self)._get_printed_report_name(),
+                self.partner_id.commercial_company_name
+            )
+        else:
+            return super(AccountInvoiceFinnish, self)._get_printed_report_name()
